@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Algos Visualizer</title>
+</head>
+<body>
+    <div class="nav-container">
+        <h2 class="title" onclick="window.location.reload()">
+            Visualize Sorting Algorithms
+        </h2>
+        <div class="navbar" id="navbar">
+            <!-- <a id="random" onclick="RenderScreen()">Generate array</a> -->
+            <span class="options">
+                <select name="select sort algorithm" id="menu" class="algo-menu">
+                  <option value="0">Select algorithm</option>
+                  <option value="1">Bubble Sort</option>
+                  <option value="2">Selection Sort</option>
+                  <option value="3">Insertion Sort</option>
+                  <option value="4">Merge Sort</option>
+                  <option value="5">Quick Sort</option>
+                </select>
+              </span>
+            <span class="options">
+                <select name="select array size" id="menu" class="size-menu">
+                  <option value="0">Array size</option>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                </select>
+            </span>
+            <span class="options">
+                <select name="speed of visualization" id="menu" class="speed-menu">
+                  <option value="0">Select speed</option>
+                  <option value="0.5">0.5x</option>
+                  <option value="1">1.0x</option>
+                  <option value="1.5">1.5x</option>
+                  <option value="2">2.0x</option>
+                  <option value="4">4.0x</option>
+                </select>
+            </span>
+            <a id="random" onclick="RenderScreen()">Generate array</a>
+            <a class="start">Sort</a>
+            <a class="icon"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+    <div class="center">
+        <div class="array"></div>
+    </div>
+    <footer class="footer">
+        <p>Created with <i class="fa fa-heart" style="color: white" ></i> by Ankita 
+          <a href="https://www.linkedin.com/in/ankita-veerabahu/" target="_blank" class="link" >
+            <i class="fa fa-linkedin-square" aria-hidden="true" style="color:white" ></i>
+          </a>
+        </p>
+      </footer>
+      <!-- <script src="./js/app_test.js"></script>
+      <script src="./js/helper_test.js"></script>
+      <script src="./js/sort_algos_test.js"></script> -->
+      <script src="./scripts/app.js"></script>
+      <script src="./scripts/helper.js"></script>
+      <script src="./scripts/sort-algorithms.js"></script>
+</body>
+</html>
